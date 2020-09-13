@@ -8,7 +8,7 @@ This tool allow the generation of custom reports based on pre-existent .docx tem
 
 In order to use this script, the following requirements have to be satisfied:
 
-+ Python3.6 
++ Python3.6 or above 
 + Rapid7 Nexpose
 
 the following dependencies have also to be satisfied:
