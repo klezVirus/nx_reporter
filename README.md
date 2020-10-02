@@ -32,7 +32,7 @@ The tool needs the following dependencies have also to be satisfied:
 
 + Setup virtualenv 
 
-		virtualenv "nx-venv
+		virtualenv "nx-venv"
 
 + Activate virtualenv
 
