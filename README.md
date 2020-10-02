@@ -2,16 +2,16 @@
 
 ## Overview
 
-This tool allow the generation of custom reports based on pre-existent .docx templates, using Rapid7 Nexpose raw export files as data 
+This tool allows to create custom reports based on pre-existent .docx templates, using Rapid7 Nexpose raw export files as the main datasource 
 
 ## Requirements
 
-In order to use this script, the following requirements have to be satisfied:
+In order to use this tool, the following requirements should be satisfied:
 
 + Python3.6 or above 
 + Rapid7 Nexpose
 
-the following dependencies have also to be satisfied:
+The tool needs the following dependencies have also to be satisfied:
 	
 - pandas	
 - matplotlib
@@ -19,34 +19,32 @@ the following dependencies have also to be satisfied:
 - python-docx
 - [Optional] virtualenv
 
-## Basic Installation and configuration
+## Basic Installation and configuration using virtualenv
 
 + Install Python >= 3.6 from official repo
 
-		$> pip install virtualenv
+		pip install virtualenv
 
-+ Setup your virtualenv 
++ Clone the repo
 
-		$> virtualenv "VENV_DIR"
+		git clone https://github.com/klezVirus/nx_reporter.git
+		cd nx_reporter
 
-+ Activate your virtualenv
++ Setup virtualenv 
 
-		$> ./VENV_DIR/Scripts/activate
+		virtualenv "nx-venv
+
++ Activate virtualenv
+
+		./nx-venv/Scripts/activate
 
 + Install dependencies
 
-		$> pip install -r requirements.txt
-
-+ create your project root directory
-
-		$> mkdir project_dir
-
-+ download and copy this project in your project_dir
-
+		pip install -r requirements.txt
 
 ## Usage
 
-Before using the script, it is necessary to setup the config.ini file in /../project_dir/config/config.ini
+Before using the script, it is necessary to setup the config.ini file in `<base-path>/nx_reporter/config/config.ini`
 
 Until the release of the installation script it is strongly reccomended to do the following:
 
@@ -54,14 +52,12 @@ Until the release of the installation script it is strongly reccomended to do th
 * Launch the script from the Project Root Dir
 * Do not edit directory structure
 
-Currently, not all configurations can be edited; to have further details check the config.ini file.
+Currently, not all configurations can be edited; to have further details check the `config.ini` file.
 
 Using the script manually is quite simple:
 
-+ activate your virtualenv
-+ launch the script
-
-		$> python reporter.py
+		./nx-venv/Scripts/activate
+		python reporter.py
 
 ## Setup Automation
 
