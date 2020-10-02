@@ -21,7 +21,7 @@ The tool needs the following dependencies have also to be satisfied:
 
 ## Basic Installation and configuration using virtualenv
 
-+ Install Python >= 3.6 from official repo
++ Install virtualenv
 
 		pip install virtualenv
 
